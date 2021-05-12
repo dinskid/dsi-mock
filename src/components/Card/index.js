@@ -15,7 +15,7 @@ export default function Card(props) {
         <p className="card-desc">
           {props.description}
         </p>
-        <button className="btn">{props.buttonText}</button>
+        <button className="btn hvr-fade">{props.buttonText}</button>
       </div>
     </Fade>
   )

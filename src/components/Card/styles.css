@@ -17,7 +17,7 @@
 }
 
 .card-desc {
-  font-size: clamp(17px, 1.2vw, 25px);
+  font-size: clamp(15px, 1.15vw, 25px);
   line-height: 1.5;
 }
 
