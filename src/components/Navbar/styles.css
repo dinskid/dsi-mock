@@ -1,0 +1,72 @@
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1.2% 11%;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav > .brand {
+ width: clamp(70px, 25%, 150px);
+}
+
+.navbar > ul {
+  margin: 0 7%;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar > ul > li {
+  list-style: none;
+  cursor: pointer;
+  font-size: clamp(1rem, 1.3vw, 1.5rem);
+}
+
+.navbar > ul > li > a:hover{
+  color: #EE4248;
+}
+
+.nav-icons {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.nav-icons > img {
+  width: clamp(1.5rem, 1.5%, 5rem);
+}
+
+.drawer {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* For mobile phones: */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.2% 2%;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .navbar > ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  .navbar > ul > li {
+    margin: 0.5rem;
+  }
+
+  .drawer {
+    visibility: visible;
+    position: absolute;
+    right: 10%;
+    top: 2%;
+  }
+
+  .show {
+    display: block !important;
+  }
+}
