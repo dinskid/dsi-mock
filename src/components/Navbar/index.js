@@ -19,7 +19,7 @@ function Navbar() {
         <li className="nav-link"><a href="#welcome">About</a></li>
         <li className="nav-link">Client</li>
         <li className="nav-link">Partner</li>
-        <li className="nav-link">
+        <li className="nav-link nav-icons-wrap">
           <div className="nav-icons">
             <img src={Union} alt="home" width="100%" height="100%" />
             <img src={Mail} alt="mail" width="100%" height="100%" />
