@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="contact">
-          <h3 style={{ fontSize: '1.5em' }}>Contact</h3>
+          <h3 style={{ fontSize: 'clamp(20px, 1.67vw, 24px)' }}>Contact</h3>
           <div>
             Phone : +62.21.5314.1135
             <br />

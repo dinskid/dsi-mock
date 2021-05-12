@@ -1,6 +1,6 @@
 h1 {
-  font-size: clamp(25px, 3vw, 50px);
-  font-weight: 600;
+  font-size: clamp(25px, 2.22vw, 32px);
+  font-weight: 500;
   margin-bottom: 1rem;
   color: black;
   margin: 2rem 0;
@@ -52,7 +52,7 @@ section:nth-of-type(even) {
 
 .tag {
   margin: 10px 0;
-  font-size: clamp(15px, 1.38vw, 27px);
+  font-size: clamp(17px, 1.39vw, 20px);
 }
 
 .btn {

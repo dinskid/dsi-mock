@@ -37,6 +37,11 @@ footer {
   max-width: 100%;
 }
 
+.address > div, .contact > div {
+  font-size: clamp(15px, 1.25vw, 18px);
+  line-height: 1.5;
+}
+
 @media only screen and (max-width: 1024px) {
   /* For mobile phones: */
   .footer-wrap {
