@@ -9,9 +9,9 @@ export default function Card(props) {
     <Fade>
       <div className="card animate__fadeInUp">
         <img src={img} alt={props.imgAlt} width="100%" height="100%" />
-        <h3 className="card-title txt-red">
+        <h2 className="card-title txt-red">
           {props.title}
-        </h3>
+        </h2>
         <p className="card-desc">
           {props.description}
         </p>
