@@ -9,7 +9,8 @@ footer {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 17px;
+  font-size: var(--body);
+  font-weight: 500;
 }
 
 .footer-wrap {
@@ -38,7 +39,8 @@ footer {
 }
 
 .address > div, .contact > div {
-  font-size: clamp(15px, 1.25vw, 18px);
+  font-size: var(--body);
+  font-weight: 300;
   line-height: 1.5;
 }
 

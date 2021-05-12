@@ -1,8 +1,18 @@
+:root {
+  --red: #EE4248;
+  --gray: #1F2E35;
+  --black: #1F2E35;
+  --tagline: clamp(30px, 3.33vw, 48px);
+  --title:clamp(25px, 2.22vw, 32px);
+  --description: clamp(17px, 1.39vw, 20px);
+  --body: clamp(15px, 1.25vw, 18px);
+}
+
 h1 {
-  font-size: clamp(25px, 2.22vw, 32px);
+  font-size: var(--title);
+  color: var(--black);
   font-weight: 500;
   margin-bottom: 1rem;
-  color: black;
   margin: 2rem 0;
 }
 
@@ -40,8 +50,8 @@ section:nth-of-type(even) {
  }
 
 .title {
-  font-size: clamp(30px, 3.33vw, 48px);
-  font-weight: 800;
+  font-size: var(--tagline);
+  font-weight: 700;
   color: #1F2E35;
   margin: 0;
   display: flex;
@@ -52,7 +62,7 @@ section:nth-of-type(even) {
 
 .tag {
   margin: 10px 0;
-  font-size: clamp(17px, 1.39vw, 20px);
+  font-size: var(--description);
 }
 
 .btn {
@@ -62,7 +72,7 @@ section:nth-of-type(even) {
   background-color: #EE4248;
   color: white;
   border-radius: 4px;
-  font-size: 1.3rem;
+  font-size: --var(description);
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -86,7 +96,7 @@ section:nth-of-type(even) {
 
 .about {
   padding: 1rem 0;
-  font-size: clamp(17px, 1.1vw, 1.5rem);
+  font-size: var(--body);
   line-height: 1.5;
 }
 
