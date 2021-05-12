@@ -31,13 +31,16 @@ section:nth-of-type(even) {
   justify-content: space-around;
 }
 
-#landing > * {
-  width: 50%;
-  padding: 3%;
+.tags {
+  width: 55%;
 }
 
+#landing > img { 
+  width: 45%;
+ }
+
 .title {
-  font-size: clamp(30px, 3.35vw, 63px);
+  font-size: clamp(30px, 3.33vw, 48px);
   font-weight: 800;
   color: #1F2E35;
   margin: 0;
@@ -49,7 +52,7 @@ section:nth-of-type(even) {
 
 .tag {
   margin: 10px 0;
-  font-size: 20px;
+  font-size: clamp(15px, 1.38vw, 27px);
 }
 
 .btn {

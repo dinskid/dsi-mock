@@ -61,7 +61,7 @@ function App() {
           </Slide>
           <button className="btn hvr-fade">
             Read More
-        </button>
+          </button>
         </div>
         <Fade><img src={Pana} alt="random" width="100%" height="100%" /></Fade>
       </section>
