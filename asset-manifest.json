@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dsi-mock/static/css/main.004f6650.chunk.css",
+    "main.css": "/dsi-mock/static/css/main.0fc7907b.chunk.css",
     "main.js": "/dsi-mock/static/js/main.7b78c897.chunk.js",
     "main.js.map": "/dsi-mock/static/js/main.7b78c897.chunk.js.map",
     "runtime-main.js": "/dsi-mock/static/js/runtime-main.d5e56940.js",
@@ -8,7 +8,7 @@
     "static/js/2.16965fac.chunk.js": "/dsi-mock/static/js/2.16965fac.chunk.js",
     "static/js/2.16965fac.chunk.js.map": "/dsi-mock/static/js/2.16965fac.chunk.js.map",
     "index.html": "/dsi-mock/index.html",
-    "static/css/main.004f6650.chunk.css.map": "/dsi-mock/static/css/main.004f6650.chunk.css.map",
+    "static/css/main.0fc7907b.chunk.css.map": "/dsi-mock/static/css/main.0fc7907b.chunk.css.map",
     "static/js/2.16965fac.chunk.js.LICENSE.txt": "/dsi-mock/static/js/2.16965fac.chunk.js.LICENSE.txt",
     "static/media/Union.svg": "/dsi-mock/static/media/Union.ea51ee59.svg",
     "static/media/cogwheel.svg": "/dsi-mock/static/media/cogwheel.081aa29d.svg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.d5e56940.js",
     "static/js/2.16965fac.chunk.js",
-    "static/css/main.004f6650.chunk.css",
+    "static/css/main.0fc7907b.chunk.css",
     "static/js/main.7b78c897.chunk.js"
   ]
 }
