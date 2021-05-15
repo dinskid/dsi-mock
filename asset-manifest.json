@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.d8fb6000.chunk.css",
-    "main.js": "./static/js/main.50f82989.chunk.js",
-    "main.js.map": "./static/js/main.50f82989.chunk.js.map",
+    "main.css": "./static/css/main.e44b84fb.chunk.css",
+    "main.js": "./static/js/main.c4f41bf8.chunk.js",
+    "main.js.map": "./static/js/main.c4f41bf8.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.a30eab8c.js",
     "runtime-main.js.map": "./static/js/runtime-main.a30eab8c.js.map",
-    "static/js/2.4008954f.chunk.js": "./static/js/2.4008954f.chunk.js",
-    "static/js/2.4008954f.chunk.js.map": "./static/js/2.4008954f.chunk.js.map",
+    "static/js/2.7c14f999.chunk.js": "./static/js/2.7c14f999.chunk.js",
+    "static/js/2.7c14f999.chunk.js.map": "./static/js/2.7c14f999.chunk.js.map",
     "index.html": "./index.html",
     "service-worker.js": "./service-worker.js",
     "service-worker.js.map": "./service-worker.js.map",
-    "static/css/main.d8fb6000.chunk.css.map": "./static/css/main.d8fb6000.chunk.css.map",
-    "static/js/2.4008954f.chunk.js.LICENSE.txt": "./static/js/2.4008954f.chunk.js.LICENSE.txt",
+    "static/css/main.e44b84fb.chunk.css.map": "./static/css/main.e44b84fb.chunk.css.map",
+    "static/js/2.7c14f999.chunk.js.LICENSE.txt": "./static/js/2.7c14f999.chunk.js.LICENSE.txt",
     "static/media/Union.webp": "./static/media/Union.539facb2.webp",
     "static/media/android.webp": "./static/media/android.ce48d728.webp",
     "static/media/blackberry.webp": "./static/media/blackberry.90bc38a0.webp",
@@ -31,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a30eab8c.js",
-    "static/js/2.4008954f.chunk.js",
-    "static/css/main.d8fb6000.chunk.css",
-    "static/js/main.50f82989.chunk.js"
+    "static/js/2.7c14f999.chunk.js",
+    "static/css/main.e44b84fb.chunk.css",
+    "static/js/main.c4f41bf8.chunk.js"
   ]
 }
