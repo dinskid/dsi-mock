@@ -1,6 +1,11 @@
 import React from 'react';
-import Logo from '../../images/logo.svg';
-import TechnologiesLogo from '../../images/tech_logos.svg';
+import Logo from '../../images/logo.webp';
+import Android from '../../images/android.webp';
+import BlackBerry from '../../images/blackberry.webp';
+import DotNet from '../../images/dotnet.webp';
+import Ios from '../../images/ios.webp';
+import Java from '../../images/java.webp';
+import SilverLight from '../../images/silverlight.webp';
 
 import './styles.css'
 
@@ -28,7 +33,16 @@ export default function Footer() {
           </div>
         </div>
         <div className="technologies">
-          <img src={TechnologiesLogo} alt="logos of technologies" width="100%" height="100%" />
+          <div className="row">
+            <img src={Android} alt="brand-logo" />
+            <img src={BlackBerry} alt="brand-logo" />
+            <img src={DotNet} alt="brand-logo" />
+          </div>
+          <div className="row">
+            <img src={Ios} alt="brand-logo" />
+            <img src={Java} alt="brand-logo" />
+            <img src={SilverLight} alt="brand-logo" />
+          </div>
         </div>
       </div>
       <div className="copyright">Copyright &#169; 2015 - Dwidasa Samsara Indonesia</div>

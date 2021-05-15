@@ -1,0 +1,20 @@
+.suggestion {
+  display: flex;
+  align-items: center;
+  background-color: var(--red);
+}
+
+.suggestion > * {
+  margin: 0.5rem !important;
+  color: white;
+}
+
+.btn {
+  min-width: 64px;
+  border: 1px solid white !important;
+}
+
+.dismiss {
+  cursor: pointer;
+  font-size: 2rem;
+}

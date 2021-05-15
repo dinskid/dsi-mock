@@ -1,9 +1,9 @@
 import { React, useState } from 'react';
-import Logo from '../../images/logo.svg';
-import Union from '../../images/Union.svg';
-import Mail from '../../images/mail.svg';
-import Shuffle from '../../images/shuffle.svg';
-import DrawerIcon from '../../images/text_align_right.svg';
+import Logo from '../../images/logo.webp';
+import Union from '../../images/Union.webp';
+import Mail from '../../images/mail.webp';
+import Shuffle from '../../images/shuffle.webp';
+import DrawerIcon from '../../images/text_align_right.webp';
 
 import './styles.css'
 

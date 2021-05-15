@@ -1,30 +1,62 @@
+import { useEffect, useState, useRef } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Pana from './images/pana.svg';
-import Pana1 from './images/pana1.svg';
+import Pana from './images/pana.webp';
+import Pana1 from './images/pana1.webp';
 import Card from './components/Card';
+import InstallSuggestion from './components/InstallSuggestion';
 import { Fade, Slide } from 'react-reveal';
 
 import './App.css';
 
 function App() {
+  let tid = useRef(null);
+  const [suggest, setSuggest] = useState(true);
+  let deferredPrompt = useRef(null);
+  useEffect(() => {
+    Notification.requestPermission(status => {
+      console.log('Notification permission status:', status);
+    });
+
+    window.addEventListener('beforeinstallprompt', e => {
+      console.log(`'beforeinstallprompt' event was fired.`);
+      e.preventDefault();
+      deferredPrompt.current = e;
+    });
+
+    // TODO: don't promote if already installed
+    // if ('getInstalledRelatedApps' in navigator) {
+    //   navigator.getInstalledRelatedApps().then(relatedApps => {
+    //     console.log(relatedApps);
+    //     relatedApps.forEach((app) => {
+    //       console.log(app.id, app.platform, app.url);
+    //     });
+    //   });
+    // }
+
+    tid.current = setTimeout(() => setSuggest(false), 60000);
+    return () => {
+      clearTimeout(tid.current);
+    }
+  }, []);
+
   const cardDetails = [
     {
-      img: 'product_description.svg',
+      img: 'product_description.webp',
       imgAlt: 'product description',
       title: 'Our Product',
       description: 'Our product is made on the base of our team’s careful research and analyses, ranging from internet based application.',
       buttonText: 'Read More',
     },
     {
-      img: 'verified.svg',
+      img: 'verified.webp',
       imgAlt: 'verified',
       title: 'Our Service',
       description: 'DSI’s shared service solutions focus on the front-end based software development, designed specifically for the banking and financial sectors.',
       buttonText: 'Read More',
     },
     {
-      img: 'cogwheel.svg',
+      img: 'cogwheel.webp',
       imgAlt: 'technology',
       title: 'Our Technology',
       description: 'First JAVA, runs on more than 850 million personal computers worldwide, and on billions of devices worldwide, including mobile and TV devices.',
@@ -33,7 +65,23 @@ function App() {
   ];
 
   return (
+
     <>
+      {suggest &&
+        <Slide down>
+          <InstallSuggestion
+            dismiss={() => {
+              setSuggest(false);
+            }}
+            onInstall={() => {
+              setSuggest(false);
+              const e = deferredPrompt.current;
+              if (e) e.prompt();
+              else alert("Sorry! The app could't be installed.\nPlease do not use incognito mode or an outdated browser for the best experience.")
+            }}
+          />
+        </Slide>
+      }
       <Navbar />
       <section id="landing">
         <div className="tags">
@@ -59,8 +107,20 @@ function App() {
               Managed by a team of professional experts with extensive experience and impressive track records
             </div>
           </Slide>
-          <button className="btn hvr-fade">
-            Read More
+          <button className="btn hvr-fade" onClick={() => {
+            if (Notification.permission === 'granted') {
+              navigator.serviceWorker.getRegistration().then(reg => {
+                if (reg)
+                  reg.showNotification('Hi!, I\'m sending this notification through code.');
+              });
+            } else {
+              console.log('clicked');
+              Notification.requestPermission(status => {
+                console.log('Notification permission status:', status);
+              });
+            }
+          }}>
+            Notify
           </button>
         </div>
         <Fade><img src={Pana} alt="random" width="100%" height="100%" /></Fade>

@@ -63,11 +63,15 @@ nav {
     margin: 0.5rem;
   }
 
+  .navbar {
+    position: relative;
+  }
+
   .drawer {
     visibility: visible;
     position: absolute;
     right: 10%;
-    top: 2%;
+    top: 1.1rem;
   }
 
   .show {

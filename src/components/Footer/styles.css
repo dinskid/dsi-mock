@@ -34,8 +34,21 @@ footer {
   width: clamp(5rem, 10vw, 8rem);
 }
 
-.technologies > img {
-  max-width: 100%;
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row > img{
+  width: 30%;
+  height: 30%;
+  margin: 5px;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
 }
 
 .address > div, .contact > div {
