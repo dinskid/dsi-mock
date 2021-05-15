@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   let tid = useRef(null);
-  const [suggest, setSuggest] = useState(true);
+  const [suggest, setSuggest] = useState(false);
   let deferredPrompt = useRef(null);
   useEffect(() => {
     Notification.requestPermission(status => {
@@ -19,20 +19,12 @@ function App() {
     });
 
     window.addEventListener('beforeinstallprompt', e => {
+      // if this event is fired, means app isn't installed
+      setSuggest(true);
       console.log(`'beforeinstallprompt' event was fired.`);
       e.preventDefault();
       deferredPrompt.current = e;
     });
-
-    // TODO: don't promote if already installed
-    // if ('getInstalledRelatedApps' in navigator) {
-    //   navigator.getInstalledRelatedApps().then(relatedApps => {
-    //     console.log(relatedApps);
-    //     relatedApps.forEach((app) => {
-    //       console.log(app.id, app.platform, app.url);
-    //     });
-    //   });
-    // }
 
     tid.current = setTimeout(() => setSuggest(false), 60000);
     return () => {
